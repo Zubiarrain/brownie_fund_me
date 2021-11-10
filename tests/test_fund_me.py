@@ -5,6 +5,13 @@ from scripts.helpful_scripts import get_account
 from scripts.deploy import deploy_fund_me
 import pytest
 
+# We have to test on:
+# 1. Brownie Ganache Chain with Mocks(ALWAYS)
+# 2. Testnet (ALWAYS)
+# 3. Brownie mainnet-fork (OPTIONAL)
+# 4. Custom mainnet-form: (OPTIONAL)
+# 5. Self/Local Ganache (NOT NECESSARY)
+
 
 def test_can_fund_and_withdaw():
     account = get_account()
